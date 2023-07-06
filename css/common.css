@@ -1,0 +1,232 @@
+body {
+    font-family: "Inter", sans-serif;
+    color: #FFFFFF;
+    font-weight: 400;
+    line-height: 150%;
+    background-color: #11171D;
+  }
+  
+.case {
+    box-sizing: border-box;
+    min-width: 320px;
+    margin: 0 auto;
+  }
+  
+div {
+    box-sizing: border-box;
+  }
+    
+/*header*/
+
+.header-section {
+    background: #111;
+    clear: both;
+    overflow: hidden;
+    padding: 16px 0;
+    border-bottom: 1px solid #ffb320;
+}
+
+.header-section ul {
+    margin: 0;
+}
+
+.nav-switch {
+    display: none;
+}
+
+.site-logo {
+    display: inline-block;
+    float: left;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.site-logo img {
+    height: 45px;
+    width: 45px;
+}
+
+.site-name {
+    display: inline-block;
+    height: 45px;
+    font-size: 24px;
+    color: white;
+    margin-left: 20px;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+.set-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.user-panel {
+    float: right;
+    font-weight: 500;
+    background: #ffb320;
+    padding: 8px 28px;
+    border-radius: 30px;
+}
+
+.user-panel a {
+    font-size: 14px;
+    color: #131313;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.main-menu {
+    float: right;
+    margin-right: 170px;
+}
+
+.main-menu ul {
+    list-style: none;
+}
+
+.main-menu ul li {
+    display: inline;
+    line-height: 24px;
+}
+
+.main-menu ul li > a {
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    margin-left: 35px;
+    font-weight: 500;
+    padding: 10px 5px;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.main-menu ul li p {
+    display: inline-block;
+    color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+    .main-menu {
+        display: none;
+        position: absolute;
+        top: 77px;
+        left: 0;
+        width: 100%;
+        background: #ffffff;
+        z-index: 999;
+    }
+
+    .nav-switch {
+        color: #fff;
+        display: block;
+        float: right;
+        cursor: pointer;
+        font-size: 25px;
+        margin-top: 5px;
+    }
+
+    .header-section {
+        overflow: visible;
+        padding: 16px 0;
+    }
+
+    .main-menu ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-menu ul li {
+        display: block;
+        border-bottom: 1px solid #ececec;
+    }
+
+    .main-menu ul li a {
+        margin-left: 0;
+        color: #131313;
+        padding: 13px 26px;
+    }
+    .main-menu ul li p {
+        color: #131313;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .main-menu {
+        margin-right: 25px;
+    }
+}
+
+/*Language*/
+.lang-desk {display: none !important;}
+
+@media only screen and (min-width: 767px) {
+    .lang-mobile {display: none !important;}
+    .lang-desk {margin-left: 40px; z-index: 200 !important; display: inline-block !important;}
+}
+
+.dropbtn {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #111;
+    width: 80px;
+
+}
+
+.dropbtn
+{
+  padding-left: 25px;
+  width: 40px;
+}
+
+.dropbtn-flag-ru {
+    background: url('http://icons.iconarchive.com/icons/custom-icon-design/flag-3/16/Russia-Flag-icon.png') no-repeat left center;
+}
+
+.dropbtn-flag-usa {
+    background: url('https://icons.iconarchive.com/icons/fatcow/farm-fresh/16/flag-usa-icon.png') no-repeat left center;  
+}
+
+.dropbtn::after {
+    background: rgba(0, 0, 0, 0) url("/images/header/lang-arrow.png") no-repeat scroll center center;
+    content: "";
+    height: 16px;
+    position: absolute;
+    left: 50px;
+    top: 9px;
+    width: 16px;
+}
+
+.dropdown-content a:first-child
+{
+  background: url('http://icons.iconarchive.com/icons/custom-icon-design/flag-3/16/Russia-Flag-icon.png') no-repeat left center;
+}
+
+.dropdown-content a:last-child
+{
+  background: url('https://icons.iconarchive.com/icons/fatcow/farm-fresh/16/flag-usa-icon.png') no-repeat left center;
+}
+
+.dropdown-content a {
+    padding: 2px 0 2px 25px;
+    text-decoration: none;
+    display: block;
+    color: #FFFFFF;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    position: fixed;
+}
