@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/resultTournament.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
+
+  <link rel="stylesheet" href="./css/odometer-theme-default.css" />
+</head>
+<body>
+  
+  <header class="header-section">
+    <div class="container">
+        <a class="site-logo" href="/ru">
+            <img src="./images/header/logo.png">
+        </a>
+        <span class="site-name">ProPUBG</span>
+        <span style="color: white; position: absolute; color: #F1A517; margin-left: 2px">beta</span>
+        <div class="nav-switch" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </div>
+
+        <nav class="main-menu" id="menu">
+            <ul>
+                <li><a href="./main.html">Главная</a></li>
+                <li><a href="./news.html">Новости</a></li>
+                <li><a href="./tournament.html">Турниры</a></li>
+                <li><a href="./guarantors.html">Гарантирование</a></li>
+                <li><a href="/ru">О нас</a></li>
+                <li class="lang-mobile"><a href="">RU</a><p>|</p><a href="">ENG</a></li>
+                <li class="lang-desk">
+                  <div class="dropdown">
+                    <div class="dropbtn dropbtn-flag-ru">RU</div>
+                    <div class="dropdown-content">
+                      <a href="#" class="ru">RU</a>
+                      <a href="#" class="eng">EN</a>
+                  </div>
+                  </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+  
+  <main>
+    <div class="case">
+      <section class="promo">
+        <div class="promo__wrapper">
+          <div class="promo__wrapper_header">
+            <h1 class="promo__wrapper_header-title">Результаты турниров</h1>
+          </div>
+          
+          <div class="promo__wrapper_result">
+
+            <div class="promo__wrapper_result-item">
+              <div class="promo__wrapper_result-item-logo"><img src="./images/news-result-tournament/result_photo.png" alt=""><div>EU</div><div>День 1/1</div></div>
+              <div class="promo__wrapper_result-item-inner">
+                <div class="promo__wrapper_result-item-inner_cup promo__wrapper_result-item-inner_cup-check"></div> 
+                <div class="promo__wrapper_result-item-inner-title">
+                  <a href="./resultTournamentPage.html"><h2>Livion Tournament S1</h2></a>
+                  <h3>Полуфинал, Группа Б</h3>
+                </div>
+                <div class="promo__wrapper_result-item-inner_stats">
+                  <p>Nyutochka</p>
+                  <p>05.11.2022</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+          <button class="promo__wrapper_btn">Загрузить еще</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./js/header.js"></script>
+  
+</body>
+</html>
